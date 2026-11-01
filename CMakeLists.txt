@@ -13,6 +13,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 add_executable(
     ParallelDIP
     src/main.c
+    src/bmp_reader.c
 )
 
 target_include_directories(
