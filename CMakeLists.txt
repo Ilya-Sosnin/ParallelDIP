@@ -14,6 +14,7 @@ add_executable(
     ParallelDIP
     src/main.c
     src/bmp_reader.c
+    src/bmp_writer.c
 )
 
 target_include_directories(
