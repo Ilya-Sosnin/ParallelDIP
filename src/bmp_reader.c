@@ -105,7 +105,6 @@ int validateInfoHeader(const BMP_InfoHeader* infoHeader) {
     }
 
     if (infoHeader->biSize != 40) {
-        printf("BMP header size: %u\n", infoHeader->biSize);
         fprintf(stderr, "Error: Unsupported BMP header size\n");
         return -1;
     }
