@@ -134,6 +134,9 @@ int validateInfoHeader(const BMP_InfoHeader* infoHeader) {
 }
 
 void freeBMP(BMP_Image* image) {
-    if(image)
+    if (image != NULL) {
+        free(image->palette);
+        free(image->pixels);
         free(image);
+    }
 }
